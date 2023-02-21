@@ -19,7 +19,8 @@ export function multiply(num1, num2) {
 
 export function getAddress(input) {
     if (!input?.address?.line1) {
-        return false
+        // return false
+        throw new Error('invalid address')
     }
     return input.address.line1
 }
