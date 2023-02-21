@@ -1,7 +1,7 @@
 // to run $ node src
 
 // @ts-check
-import { multiply, storeAddress, getAddress } from './utils.js'
+import { multiply, storeAddress, getAddress, addAlbum } from './utils.js'
 
 const result = multiply(3, 4)
 
@@ -17,3 +17,5 @@ const input = storeAddress(
 const addressLine1 = getAddress(input)
 
 console.log({ addressLine1 })
+
+addAlbum(1, 2, 3)

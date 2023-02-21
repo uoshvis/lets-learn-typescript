@@ -53,3 +53,11 @@ export function getAddress(input) {
     }
     return input.address.line1
 }
+
+/**
+ *
+ * @returns {import('../types').Album}
+ */
+export function addAlbum(artist, title, year) {
+    return { artist, title, year }
+}
