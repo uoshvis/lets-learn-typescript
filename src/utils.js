@@ -12,8 +12,37 @@ export function multiply(num1, num2) {
 }
 
 /**
+ * @typedef {object} UserInfo an obj with address info
+ * @property {string} name
+ * @property {{line1: string, city: string, state: string, zip: string}} address
  *
- * @param {{address: {line1: string} }} input
+ */
+
+/**
+ *
+ * @param {string} name
+ * @param {string} line1
+ * @param {string} city
+ * @param {string} state
+ * @param {string} zip
+ * @returns {UserInfo}
+ */
+
+export function storeAddress(name, line1, city, state, zip) {
+    return {
+        name,
+        address: {
+            line1,
+            city,
+            state,
+            zip,
+        },
+    }
+}
+
+/**
+ *
+ * @param {UserInfo} input
  * @returns
  */
 
