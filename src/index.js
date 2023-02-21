@@ -1,7 +1,8 @@
 // to run $ node src
 
 // @ts-check
-import { multiply, storeAddress, getAddress, addAlbum } from './utils.js'
+import { multiply, storeAddress, getAddress } from './utils.js'
+import { addAlbum } from './album.js'
 
 const result = multiply(3, 4)
 
@@ -18,4 +19,7 @@ const addressLine1 = getAddress(input)
 
 console.log({ addressLine1 })
 
-addAlbum(1, 2, 3)
+// works without ts-check
+const album = addAlbum('U2', 'One world', 2000)
+
+console.log({ album })
